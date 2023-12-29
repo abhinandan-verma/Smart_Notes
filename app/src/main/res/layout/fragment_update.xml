@@ -23,7 +23,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="16dp"
                 android:elevation="8dp"
-                app:cardBackgroundColor="@color/white"
+                app:cardBackgroundColor="@color/black"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
@@ -39,7 +39,7 @@
                         android:ems="10"
                         android:hint="Type title"
                         android:inputType="text"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
@@ -53,7 +53,6 @@
                         android:gravity="start|top"
                         android:hint="Type your Note"
                         android:inputType="textMultiLine"
-                        android:textColorHint="@color/black"
                         android:textSize="17sp" />
 
 
@@ -72,6 +71,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="570dp"
-            android:backgroundTint="#0F811D"/>
+            android:backgroundTint="#02FA61"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

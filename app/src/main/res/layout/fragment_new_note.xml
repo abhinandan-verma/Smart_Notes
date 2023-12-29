@@ -42,25 +42,23 @@
                 android:id="@+id/noteTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
                 android:ems="10"
-                android:hint="Type the Title"
+                android:hint="Type title"
                 android:inputType="text"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/noteBody"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="626dp"
                 android:layout_marginTop="20sp"
                 android:background="@android:color/transparent"
                 android:ems="10"
                 android:gravity="start|top"
                 android:hint="Type the Body"
-                android:textColor="@color/black"
-                android:textColorHint="#0364BA"
+                android:textColor="@color/white"
                 android:textSize="16sp" />
 
 

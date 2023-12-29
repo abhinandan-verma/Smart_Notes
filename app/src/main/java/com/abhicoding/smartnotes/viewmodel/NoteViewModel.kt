@@ -2,6 +2,7 @@ package com.abhicoding.smartnotes.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
 import com.abhicoding.smartnotes.repository.Repository
 import com.abhicoding.smartnotes.room.Note
@@ -20,5 +21,7 @@ class NoteViewModel(app: Application,private val repository: Repository)
         }
 
         fun getAllNotes() = repository.getAllNotes()
-        fun searchNote(query: String?) = repository.searchNote(query)
+        fun searchNote(query: String?) : LiveData<List<Note>>{
+            return repository.searchNote(query)
+        }
 }

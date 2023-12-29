@@ -80,9 +80,11 @@ class HomeFragment : Fragment(R.layout.fragment_home), SearchView.OnQueryTextLis
         }
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
         menu.clear()
+        setHasOptionsMenu(true)
         inflater.inflate(R.menu.home_menu,menu)
 
         val menuSearch = menu.findItem(R.id.menu_search).actionView as SearchView
@@ -91,13 +93,13 @@ class HomeFragment : Fragment(R.layout.fragment_home), SearchView.OnQueryTextLis
     }
 
     override fun onQueryTextSubmit(query: String?): Boolean {
-      //  searchNote(query)
+        searchNote(query)
         return false
     }
 
     private fun searchNote(query: String?) {
-        val searchQuery = "%$query"
-        notesViewModel.searchNote(query)
+        val searchQuery = "%$query%"
+        notesViewModel.searchNote(searchQuery)
             .observe(this){list -> noteAdapter.differ.submitList(list)}
     }
 

@@ -65,13 +65,13 @@
             android:id="@+id/floatingActionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#02FA21"
+            android:layout_marginStart="280dp"
             android:clickable="true"
             android:src="@drawable/baseline_add_task_24"
             android:tintMode="src_atop"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginStart="300dp"
-            android:layout_marginTop="600dp"/>
+            android:layout_marginTop="570dp"
+            android:backgroundTint="#0F811D"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
